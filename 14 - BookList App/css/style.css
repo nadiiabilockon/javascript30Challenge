@@ -1,0 +1,89 @@
+html {
+  box-sizing: border-box;
+  background: #6620a8;
+  font-size: 20px;
+  font-weight: 200;
+  color: #242424;
+}
+
+body {
+  margin: 0;
+  font-family: HarmoniaSans, Helvetica, Sans-serif;
+  line-height: 1.35;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  margin-top: 0;
+  line-height: 1.25;
+  font-family: Didot, Times New Roman, Times, Serif;
+  font-size: 2.1875rem;
+  font-weight: 400;
+  text-shadow: 3px 2px 2px #6620a859;
+  text-align: center;
+}
+
+h2 {
+  font-family: Didot, Times New Roman, Times, Serif;
+  font-size: 1.6875rem;
+  line-height: 1.3;
+  margin-top: 0.625rem;
+  padding: 0.5rem 0;
+  font-style: italic;
+}
+
+h2 >span{
+  border-bottom: 1px solid #6620a86b;
+}
+
+.content-dek {
+  line-height: 1.2;
+  letter-spacing: 0.04rem;
+  -webkit-font-smoothing: auto;
+}
+
+.site-wrap {
+  max-width: 700px;
+  margin: 100px auto;
+  background: white;
+  padding: 40px 40px 80px;
+  text-align: justify;
+}
+
+.foto {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.slide-in {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.align-left.slide-in {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
